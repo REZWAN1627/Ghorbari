@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_UI.Hotel_Details_frag">
+
+    <LinearLayout
+        android:id="@+id/part"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:background="@drawable/stroke_shape_ractangle"
+            android:src="@drawable/snapback_black"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:id="@+id/hotel_room_details_frag"
+            android:scaleType="centerInside">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/part2"
+        android:background="@drawable/custome_button_log_in"
+        android:layout_alignBottom="@+id/part"
+        android:layout_centerHorizontal="true"
+        android:layout_width="125dp"
+        android:layout_height="30dp">
+        <TextView
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AA0505"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="TK 7,000/ Month">
+
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/part3"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posted on 12 jun 12:45pm"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/part">
+
+    </TextView>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/part3">
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bookmark"
+            android:layout_below="@+id/part3"
+            android:layout_alignParentRight="true">
+
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/part4"
+        android:padding="5dp"
+        android:layout_below="@+id/part3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Single Room Available From August">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/part5"
+        android:drawableEnd="@drawable/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/part4"
+        android:text="Mirpur 2, Dhaka"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:drawableRight="@drawable/location">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="390dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/part5"
+        android:id="@+id/part6"
+        android:background="#FF00"
+        android:weightSum="80"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Facilities"
+        android:layout_below="@+id/part6"
+        android:id="@+id/part7"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/part7"
+        android:layout_marginTop="5dp"
+        android:id="@+id/part8">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_ghorbari_hotel_details_page1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <!--Wait-->
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:id="@+id/part9"
+        android:layout_below="@+id/part8">
+
+    </TextView>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/part9"
+        android:id="@+id/part10"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="10dp"
+            app:cardElevation="80dp"
+            app:cardMaxElevation="80dp"
+            android:layout_width="380dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:drawableEnd="@drawable/description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hellofffsffsfsfsfsfssfsfsfsf'zg\g\,\[sf"
+                android:drawableRight="@drawable/description">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hotel_bookIn_btn"
+        android:layout_marginTop="5dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_rectangle"
+        android:textColor="#FFF"
+        android:text="BOOK NOW"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/part10"
+        android:layout_centerHorizontal="true">
+
+    </Button>
+
+
+</RelativeLayout>

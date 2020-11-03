@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#808080"
+        app:cardMaxElevation="30dp"
+        app:cardElevation="30dp"
+        android:layout_centerInParent="true"
+        android:layout_width="150dp"
+        android:layout_height="160dp">
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/stroke_of_card"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/hotel_room_image">
+
+            </ImageView>
+            <TextView
+                android:layout_gravity="center"
+                android:padding="1dp"
+                android:id="@+id/hotel_room_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Single Room"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#000">
+            </TextView>
+            <TextView
+                android:id="@+id/hotel_room_available_month"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From August"
+                android:textColor="#000"
+                android:textSize="15sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/hotel_rent_per_month"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="TK 7,062/ Month">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

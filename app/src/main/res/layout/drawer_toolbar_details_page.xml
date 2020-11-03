@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F00"
+        android:id="@+id/ghorbari_details_page_toolbar">
+        <TextView
+            android:id="@+id/text202"
+            android:layout_marginLeft="80dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF">
+
+        </TextView>
+        <Button
+
+            android:drawableEnd="@drawable/exit_of_actionbar"
+            android:layout_marginLeft="65dp"
+            android:background="@drawable/stroke_shape_ractangle"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/exit_of_actionbar">
+
+        </Button>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</RelativeLayout>

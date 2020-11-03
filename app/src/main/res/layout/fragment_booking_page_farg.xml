@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    tools:context=".Fragment_UI.Booking_page_farg">
+
+    <LinearLayout
+        android:id="@+id/lay_part1"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="Single Room Available From August"></TextView>
+        <TextView
+            android:drawableEnd="@drawable/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mirput 2, Dkaka"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/location">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#FF00"
+            android:textStyle="bold"
+            android:text="Tk 6000/ Month">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="390dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lay_part1"
+        android:id="@+id/lay_part2"
+        android:background="#FF00"
+        android:weightSum="80"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lay_part2"
+        android:id="@+id/lay_part3"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="5">
+
+            <EditText
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:layout_width="170dp"
+                android:background="@drawable/rectangle_shape_of_text_feild"
+                android:hint="First Name">
+
+            </EditText>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:layout_width="170dp"
+                android:background="@drawable/rectangle_shape_of_text_feild"
+                android:hint="First Name">
+
+            </EditText>
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:layout_width="170dp"
+                android:background="@drawable/rectangle_shape_of_text_feild"
+                android:hint="First Name">
+
+            </EditText>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:layout_width="170dp"
+                android:background="@drawable/rectangle_shape_of_text_feild"
+                android:hint="First Name">
+
+            </EditText>
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:layout_width="170dp"
+                android:background="@drawable/rectangle_shape_of_text_feild"
+                android:hint="First Name">
+
+            </EditText>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:layout_width="170dp"
+                android:background="@drawable/rectangle_shape_of_text_feild"
+                android:hint="First Name">
+
+            </EditText>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Arrival"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000">
+
+            </TextView>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Departure"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000">
+
+            </TextView>
+
+            <EditText
+                android:layout_marginTop="0dp"
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:layout_width="180dp"
+                android:background="@drawable/rectangle_shape_of_text_feild"
+                android:hint="First Name">
+
+            </EditText>
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:layout_width="180dp"
+                android:background="@drawable/rectangle_shape_of_text_feild"
+                android:hint="First Name">
+
+            </EditText>
+
+
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/save_info_customer"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#FF00"
+            android:textSize="20sp"
+            android:text="save information"
+            android:padding="10dp"
+            android:background="@drawable/stroke_red_trangle_10dp"></Button>
+
+        <GridLayout
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="5">
+
+            <Button
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:background="@drawable/call">
+
+            </Button>
+            <Button
+                android:layout_marginLeft="100dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:background="@drawable/mail">
+
+            </Button>
+
+
+
+        </GridLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

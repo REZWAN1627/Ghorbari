@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+        android:id="@+id/ccp_pop"
+        android:background="@drawable/stroke_shape_ractangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:inputType="number"
+        android:drawableEnd="@drawable/phone"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/user_phone_otp_pop"
+        android:padding="10dp"
+        android:hint="Phone Number"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/stroke_shape_ractangle"
+        android:drawableRight="@drawable/phone"></EditText>
+    <ProgressBar
+        android:id="@+id/progressBar_for_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible">
+
+    </ProgressBar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Resend"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/SendingOtp"
+        android:visibility="invisible">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/OTP_liner_layout"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/otpNumberOne"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="auto"
+            android:inputType="number"
+            android:maxLength="1" />
+        <EditText
+            android:id="@+id/optNumberTwo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otpNumberThree"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/otpNumberFour"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/otpNumberFive"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/optNumberSix"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/phone_auth_btn_pop"
+        android:background="@drawable/continue_in2nd_acivity_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Next"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF">
+
+    </Button>
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/POP_phone_auth_resend_btn"
+        android:background="@drawable/continue_in2nd_acivity_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Resend"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView2_emailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="google@gmail.com"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar_for_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible">
+
+    </ProgressBar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Resend"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/SendingEmailVerification"
+        android:visibility="invisible">
+
+    </TextView>
+
+
+
+
+    <Button
+        android:id="@+id/phone_auth_btn_pop2"
+        android:background="@drawable/continue_in2nd_acivity_btn"
+        android:layout_marginTop="5dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Next"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF">
+
+    </Button>
+
+
+
+</LinearLayout>

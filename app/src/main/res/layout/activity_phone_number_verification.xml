@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.phone_number_verification">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Phone Authentication"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp"
+            android:background="@drawable/stroke_shape_ractangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:inputType="number"
+            android:drawableEnd="@drawable/phone"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/user_phone_otp"
+            android:padding="10dp"
+            android:hint="Phone Number"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/stroke_shape_ractangle"
+            android:drawableRight="@drawable/phone"></EditText>
+        
+        <ProgressBar
+            android:id="@+id/progressBar_phone_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible">
+
+        </ProgressBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Resend"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/resendOtpBtn"
+            android:visibility="invisible">
+
+        </TextView>
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/otpNumberOne"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="auto"
+                android:inputType="number"
+                android:maxLength="1" />
+            <EditText
+                android:id="@+id/optNumberTwo"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/otpNumberThree"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="1"/>
+
+            <EditText
+                android:id="@+id/otpNumberFour"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="1"/>
+
+            <EditText
+                android:id="@+id/otpNumberFive"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="1"/>
+
+            <EditText
+                android:id="@+id/optNumberSix"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="1"/>
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/phone_auth_btn"
+            android:background="@drawable/continue_in2nd_acivity_btn"
+            android:layout_marginTop="25dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF">
+
+        </Button>
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/phone_auth_resend_btn"
+            android:background="@drawable/continue_in2nd_acivity_btn"
+            android:layout_marginTop="25dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Resend"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF">
+
+        </Button>
+
+        <TextView
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can Regenerate the OTP After 60 Seconds." />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

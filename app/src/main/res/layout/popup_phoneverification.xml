@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="10dp"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/user_phoneNumber"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0006545612"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="25sp">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/OTP_liner_layout"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/otpNumberOne"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="auto"
+            android:inputType="number"
+            android:maxLength="1" />
+        <EditText
+            android:id="@+id/optNumberTwo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otpNumberThree"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/otpNumberFour"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/otpNumberFive"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/optNumberSix"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"/>
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar_for_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible">
+
+    </ProgressBar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Resend"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/SendingOtp"
+        android:visibility="invisible">
+
+    </TextView>
+    <Button
+        android:id="@+id/verify_otp_phone_btn"
+        android:background="@drawable/continue_in2nd_acivity_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Next"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF">
+
+    </Button>
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/re_send_otp_phone_btn"
+        android:background="@drawable/continue_in2nd_acivity_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Resend"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF">
+
+    </Button>
+
+
+</LinearLayout>

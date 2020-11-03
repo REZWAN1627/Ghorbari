@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment_UI.Filter_Search_UI.residential_filterSearch_frag">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:fillViewport="true">
+
+        <RadioGroup
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/spinner_design"
+                android:button="@color/fui_transparent"
+                android:drawableTop="@drawable/appartment"
+                android:gravity="center_horizontal"
+                android:text="Apartment"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:background="@drawable/spinner_design"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:button="@color/fui_transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/hostel"
+                android:text="Hostel"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+
+            <RadioButton
+                android:background="@drawable/spinner_design"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:button="@color/fui_transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/bbuilding"
+                android:text="Building"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+
+            <RadioButton
+                android:background="@drawable/spinner_design"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:button="@color/fui_transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/plot"
+                android:text="Plot"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+
+            <RadioButton
+                android:background="@drawable/spinner_design"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:button="@color/fui_transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/hotel"
+                android:text="Hotel"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+
+        </RadioGroup>
+
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="PRICE RANGE (BDT)"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Spinner
+            android:background="@drawable/spinner_design"
+            android:layout_width="150dp"
+            android:layout_height="40dp" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/up_arrow" />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/spinner_design" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="BED ROOMS"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:fillViewport="true"
+        android:layout_gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stroke_shape_ractangle"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="ALL"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/stroke_shape_ractangle"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="10sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/stroke_shape_ractangle"
+                android:textStyle="bold"
+                android:text="2"
+                android:textSize="10sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/stroke_shape_ractangle"
+                android:textSize="10sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="3"
+                android:gravity="center"/>
+
+
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/stroke_shape_ractangle"
+                android:textSize="10sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="4"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/stroke_shape_ractangle"
+                android:textSize="10sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="5"
+                android:gravity="center"/>
+
+        </RadioGroup>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="AREA RANGE (SQUARE FEET)"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner_design" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/up_arrow" />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/spinner_design" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+

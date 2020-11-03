@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_UI.Ghorbari_Page_main_frag">
+    <LinearLayout
+        android:layout_marginTop="110dp"
+        android:orientation="horizontal"
+        android:id="@+id/near"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/my_location"
+                app:civ_border_color="#E80505"
+                app:civ_border_width="5dp" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearby"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+            android:orientation="horizontal"
+            android:id="@+id/recyclerView_ghorbari_main_page1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        
+        
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:background="@drawable/fragment_layer_stroke_up"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/near2"
+        android:layout_below="@+id/near">
+        <TextView
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:text="Hotel Room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/near">
+
+        </TextView>
+        <TextView
+            android:padding="8dp"
+            android:layout_marginLeft="250dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/near2.2"
+            android:textColor="#DA0909"
+            android:textSize="10sp"
+            android:text="See all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/near">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/near2"
+        android:id="@+id/near3">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_ghorbari_main_page2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/near4"
+        android:layout_below="@+id/near3">
+        <TextView
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:text="Hotel Room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/near3">
+
+        </TextView>
+        <TextView
+            android:layout_marginLeft="250dp"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:id="@+id/near2.22"
+            android:textColor="#DA0909"
+            android:textSize="10sp"
+            android:text="See all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/fragment_layout_stroke"
+        android:id="@+id/near5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_below="@+id/near4">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_ghorbari_main_page3"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="2dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/near5">
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/home"
+                android:layout_gravity="center">
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="HOME"
+                android:textStyle="bold"
+                android:textColor="#000">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/notification_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/notification"
+                android:layout_gravity="center">
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Notification"
+                android:textStyle="bold"
+                android:textColor="#000">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/filter_search"
+                android:layout_gravity="center">
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Filter Search"
+                android:textStyle="bold"
+                android:textColor="#000">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/email"
+                android:layout_gravity="center">
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Message"
+                android:textStyle="bold"
+                android:textColor="#000">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/profile2"
+                android:layout_gravity="center">
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textColor="#000">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

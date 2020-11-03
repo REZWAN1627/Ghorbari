@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataBase.Email_user_database">
+
+    <TextView
+        android:id="@+id/user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="USER INFORMATION"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="USER INFORMATION"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="70dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/Email_user_Fname"
+            android:drawableEnd="@drawable/name"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="First Name"
+            android:layout_gravity="center"
+            android:background="@drawable/stroke_shape_ractangle"
+            android:padding="10dp"
+            android:drawableRight="@drawable/name">
+        </EditText>
+        <EditText
+            android:id="@+id/Email_user_Sname"
+            android:drawableEnd="@drawable/name"
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="Last Name"
+            android:layout_gravity="center"
+            android:background="@drawable/stroke_shape_ractangle"
+            android:padding="10dp"
+            android:drawableRight="@drawable/name">
+        </EditText>
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:layout_marginTop="10dp"
+            android:id="@+id/ccp_email"
+            android:background="@drawable/stroke_shape_ractangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:inputType="number"
+            android:drawableEnd="@drawable/phone"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/Email_user_phone"
+            android:padding="10dp"
+            android:hint="Phone Number"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/stroke_shape_ractangle"
+            android:drawableRight="@drawable/phone"></EditText>
+
+
+
+        <Button
+            android:id="@+id/Email_user_addInfo_btn"
+            android:background="@drawable/continue_in2nd_acivity_btn"
+            android:layout_marginTop="30dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="REGISTER"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF">
+
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"></ProgressBar>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

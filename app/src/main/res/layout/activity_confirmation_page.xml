@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hotel_Room_Booking.Confirmation_page">
+
+    <LinearLayout
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="#FF00">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmation"
+            android:textSize="30sp"
+            android:textColor="#FFFF"
+            android:textStyle="bold"
+            android:padding="10dp"></TextView>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bdland"
+            app:civ_border_color="#E80505"
+            app:civ_border_width="2dp" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/layer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_marginTop="30sp"
+            android:layout_gravity="center"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="Your booking has been confirm from 1 july, 2020"
+            android:textSize="25sp"
+            android:textColor="#000"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have a good day"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:layout_marginTop="150dp"></TextView>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/continue_in2nd_acivity_btn"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFF"
+            android:text="HOME"
+            android:textSize="30sp"
+            android:textStyle="bold"></Button>
+        
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+<!--<de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/profile_image"
+                android:layout_width="133dp"
+                android:layout_height="127dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/index"
+                app:civ_border_color="#E80505"
+                app:civ_border_width="2dp" />-->

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataBase.PhoneNumber_user_database">
+
+    <TextView
+        android:id="@+id/user1"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER PHONE NUMBER"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <TextView
+
+        android:layout_below="@+id/user1"
+        android:id="@+id/user2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Sign Up to GhorBari"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/phone_user_Fname"
+            android:drawableEnd="@drawable/name"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="First Name"
+            android:layout_gravity="center"
+            android:background="@drawable/stroke_shape_ractangle"
+            android:padding="10dp"
+            android:drawableRight="@drawable/name">
+        </EditText>
+        <EditText
+            android:id="@+id/phone_user_Sname"
+            android:drawableEnd="@drawable/name"
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="Last Name"
+            android:layout_gravity="center"
+            android:background="@drawable/stroke_shape_ractangle"
+            android:padding="10dp"
+            android:drawableRight="@drawable/name">
+        </EditText>
+
+        <TextView
+            android:drawableEnd="@drawable/phone"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/phone_user_phone"
+            android:padding="10dp"
+            android:text="0179522"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/stroke_shape_ractangle"
+            android:drawableRight="@drawable/phone"></TextView>
+
+
+        <Button
+            android:id="@+id/phone_user_SignUp_btn"
+            android:background="@drawable/continue_in2nd_acivity_btn"
+            android:layout_marginTop="30dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign up"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF">
+
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/phone_user_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"></ProgressBar>
+    </LinearLayout>
+
+</RelativeLayout>
